@@ -1,28 +1,34 @@
-<?php 
-    class livro{ 
-        public function gettitulo(){
-            return $this -> titulo; 
+<?php
+    class Livro{
+      private $titulo;
+      private $autor;
+      private $ano;
+      private $edicao;
+
+        //inserido padrão camelCase nos métodos
+        public function getTitulo(){
+            return $this -> titulo;
         }
-        public function settitulo($argtitulo){
-             $this -> titulo = $argtitulo; 
+        public function setTitulo($argtitulo){
+             $this -> titulo = $argtitulo;
         }
-        public function getautor(){
-            return $this -> autor; 
+        public function getAutor(){
+            return $this -> autor;
         }
-        public function setautor($argautor){
-             $this -> autor = $argautor; 
+        public function setAutor($argautor){
+             $this -> autor = $argautor;
         }
-        public function getano(){
-            return $this->ano; 
+        public function getAno(){
+            return $this->ano;
         }
-        public function setano($argano){
-             $this -> ano = $argano; 
+        public function setAno($argano){
+             $this -> ano = $argano;
         }
-        public function getedicao(){
-            return $this -> edicao; 
+        public function getEdicao(){
+            return $this -> edicao;
         }
-        public function setedicao($argedicao){
-             $this -> edicao = $argedicao; 
-        }      
+        public function setEdicao($argedicao){
+             $this -> edicao = $argedicao;
+        }
     }
 ?>
