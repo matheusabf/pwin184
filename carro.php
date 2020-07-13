@@ -1,28 +1,32 @@
-<?php 
-    class carro{		
-        public function getmarca(){
-            return $this -> marca; 
+<?php
+    class Carro{
+      private $marca;
+      private $cor;
+      private $placa;
+      private $modelo;
+        public function getMarca(){
+            return $this -> marca;
         }
-        public function setmarca($argmarca){
-             $this -> marca = $argmarca; 
+        public function setMarca($argmarca){
+             $this -> marca = $argmarca;
         }
-         public function getcor(){
-            return $this -> cor; 
+         public function getCor(){
+            return $this -> cor;
         }
-        public function setcor($argcor){
-             $this -> cor = $argcor; 
+        public function setCor($argcor){
+             $this -> cor = $argcor;
         }
-         public function getplaca(){
-            return $this -> placa; 
+         public function getPlaca(){
+            return $this -> placa;
         }
-        public function setplaca($argplaca){
-             $this -> placa = $argplaca; 
+        public function setPlaca($argplaca){
+             $this -> placa = $argplaca;
         }
-         public function getmodelo(){
-            return $this -> modelo; 
+         public function getModelo(){
+            return $this -> modelo;
         }
-        public function setmodelo($argmodelo){
-             $this -> modelo = $argmodelo; 
+        public function setModelo($argmodelo){
+             $this -> modelo = $argmodelo;
         }
     }
 ?>
